@@ -22,8 +22,7 @@ default: build
 
 setup:
 	# go install github.com/jstemmer/go-junit-report/v2@latest
-	go install golangci-lint
-	# go install github.com/jstemmer/go-junit-report/v2@latest
+	# brew install golangci-lint
 
 build: generate
 	@go build -gcflags=-trimpath=$(shell pwd) \
